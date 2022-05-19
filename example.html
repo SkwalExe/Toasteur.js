@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toasteur.js</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body style="background-color: mediumslateblue; color: white">
+
+    <script src="dist/toasteur.min.js"></script>
+    Double click the page!
+    <script>
+        document.ondblclick = () => new Toasteur().success("This is a success message, Click me!", 'Success!', () => {
+            new Toasteur("top-left").error("This is an error message, Click me!", 'Error!', () => {
+                new Toasteur("bottom-left").info("This is an info message, Click me!", 'Info!', () => {
+                    new Toasteur("bottom-right").warn("This is a warning message, Click me!", 'Warning!')
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

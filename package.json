@@ -1,0 +1,30 @@
+{
+  "name": "toasteur",
+  "version": "0.1.0",
+  "description": "Create beuitiful and customizable toast notifications for your website, similar to toastr.js but don't require jQuery",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "browserify -s Toasteur src/index.js | uglifyjs -c > dist/toasteur.min.js",
+    "lint": "eslint src/**.js src/**/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkwalExe/Toasteur.js.git"
+  },
+  "keywords": [
+    "toast",
+    "notifications"
+  ],
+  "author": "Léopold Koprivnik Ibghy, @SkwalExe <skwal.net@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SkwalExe/Toasteur.js/issues"
+  },
+  "homepage": "https://github.com/SkwalExe/Toasteur.js#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "eslint": "^8.15.0",
+    "uglify-js": "^3.15.5"
+  }
+}
