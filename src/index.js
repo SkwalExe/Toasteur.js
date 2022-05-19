@@ -19,7 +19,7 @@ const Toasteur = class {
       throw new Error('Invalid position, expected one of: top-right, top-left, bottom-right, bottom-left');
 
 
-    this.show = (type, message, title, clickCallback) => {
+    this.show = (type, message, title = '', clickCallback) => {
       if (!this.initialized)
         this.init();
 
