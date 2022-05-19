@@ -11,7 +11,7 @@ Create beautiful and customizable toast nitifications 💬 for your website ✨ 
 # JsDelivr 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toasteur.js@v0.2.0/dist/toasteur.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toasteur.js@v0.2.1/dist/toasteur.min.js"></script>
 ```
 
 # NPM module 
@@ -43,7 +43,7 @@ You can import the library into you website with [JsDelivr](#JsDelivr) or, you c
 **You also need to import the css file to your website** 
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toasteur@0.2.0/dist/themes/toasteur-default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toasteur@0.2.1/dist/themes/toasteur-default.min.css">
 ```
 
 # Your first toasts 🍞
