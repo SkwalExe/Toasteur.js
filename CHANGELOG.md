@@ -1,3 +1,6 @@
+# 0.3.0
+- Allow to put notifications on top or bottom of the pile
+
 # 0.2.1
 - Don't show `undefied` as the title if the title parameter is not set
 
