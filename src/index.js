@@ -1,5 +1,6 @@
 const Toasteur = class {
-  constructor(position = 'top-right', fadeOutTimeout = 3000) {
+  constructor(position = 'top-right', fadeOutTimeout = 3000, notificationPosition = 'bottom') {
+    let notificationOnTop = notificationPosition === 'top';
     this.fadeOutTimeout = fadeOutTimeout;
     this.initialized = false;
     this.init = () => {
@@ -66,8 +67,10 @@ const Toasteur = class {
       }
 
       notificationElement.onmouseout()
-
-      this.container.appendChild(notificationElement);
+      if (notificationOnTop)
+        this.container.prepend(notificationElement);
+      else
+        this.container.appendChild(notificationElement);
     }
 
     this.error = (message, title, clickCallback) => {
