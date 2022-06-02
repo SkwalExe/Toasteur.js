@@ -36,7 +36,7 @@
     "eqeqeq": "error",
     "multiline-comment-style": [
       "error",
-      "starred-block"
+      "separate-lines"
     ],
     "no-var": "error",
     "yoda": "error",
