@@ -1,3 +1,6 @@
+# 0.4.0
+- New positions : top-center, bottom-center
+
 # 0.3.0
 - Allow to put notifications on top or bottom of the pile
 
