@@ -1,6 +1,6 @@
 {
   "name": "toasteur",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Create beuitiful and customizable toast notifications for your website, similar to toastr.js but don't require jQuery",
   "main": "src/index.js",
   "scripts": {

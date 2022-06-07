@@ -27,7 +27,7 @@ const Toasteur = class {
     // - bottom-left
     // - top-left
     // Throw an error
-    if (![ 'top-right', 'top-left', 'bottom-right', 'bottom-left' ].includes(position))
+    if (![ 'top-center', 'bottom-center', 'top-right', 'top-left', 'bottom-right', 'bottom-left' ].includes(position))
       throw new Error('Invalid position, expected one of: top-right, top-left, bottom-right, bottom-left');
 
     // This function shows a notification with the specified type

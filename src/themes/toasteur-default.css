@@ -51,6 +51,23 @@
     flex-direction: column-reverse;
 }
 
+.toasteur-container.top-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: start;
+}
+
+.toasteur-container.bottom-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    justify-content: end;
+    flex-direction: column-reverse;
+}
+
 .toasteur-notification {
     max-width: 400px;
     width: 100%;
