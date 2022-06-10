@@ -26,6 +26,8 @@ const Toasteur = class {
     // - bottom-right
     // - bottom-left
     // - top-left
+    // - top-center
+    // - bottom-center
     // Throw an error
     if (![ 'top-center', 'bottom-center', 'top-right', 'top-left', 'bottom-right', 'bottom-left' ].includes(position))
       throw new Error('Invalid position, expected one of: top-right, top-left, bottom-right, bottom-left');
@@ -75,7 +77,7 @@ const Toasteur = class {
         // Add the timeout to the timeouts array
         timeouts.push(setTimeout(() => {
           notificationElement.classList.add('toasteur-notification-fadout');
-          // Remove the notification from the dom
+          // Remove the notification from the dom after 1.3 seconds
           timeouts.push(setTimeout(() => {
             notificationElement.remove();
           }, 1300));
