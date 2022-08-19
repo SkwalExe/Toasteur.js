@@ -1,5 +1,5 @@
 const Toasteur = class {
-  constructor(position = 'top-right', fadeOutTimeout = 3000, notificationPosition = 'bottom') {
+  constructor(position = 'top-right', fadeOutTimeout = 3000, notificationPosition = 'bottom', allowHtml = false) {
     // If notificationPosition is set to 'top' (of the notification pile)
     // Set notificationOnTop to true
     let notificationOnTop = notificationPosition === 'top';
@@ -46,11 +46,15 @@ const Toasteur = class {
       // The content of the notification
       let contentElement = document.createElement('p');
       contentElement.classList.add('toasteur-content');
-      contentElement.innerText = message;
+      if (allowHtml)
+        contentElement.innerHTML = message;
+      else
+        contentElement.innerText = message;
 
       // The title of the notification
       let titleElement = document.createElement('p');
       titleElement.classList.add('toasteur-title');
+
       titleElement.innerText = title;
 
       // The container for the title and the content
