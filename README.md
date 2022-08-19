@@ -11,7 +11,7 @@ Create beautiful and customizable toast nitifications 💬 for your website ✨ 
 # JsDelivr 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toasteur.js@v0.4.0/dist/toasteur.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/Toasteur.js@v0.5.0/dist/toasteur.min.js"></script>
 ```
 
 # NPM module 
@@ -43,7 +43,7 @@ You can import the library into you website with [JsDelivr](#JsDelivr) or, you c
 **You also need to import the css file to your website** 
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toasteur@0.4.0/dist/themes/toasteur-default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toasteur@0.5.0/dist/themes/toasteur-default.min.css">
 ```
 
 # Your first toasts 🍞
@@ -82,6 +82,23 @@ let myToasteur = new Toasteur("bottom-left", 5000, "top");
 ```
 
 ![](assets/5.png)
+
+## Adding custom html to your toast content
+
+You can allow custom html in your toast content.
+
+```js
+let myToasteur = new Toasteur("bottom-left", 5000, "top", true);
+// false by default                                      ^^^^
+```
+
+```js
+myToasteur.warn("This is a <span class='myClass'>warning</span> message, Click me!", 'Warning!')
+//                         ^^^^^^^^^^^^^^^^^^^^^        ^^^^^^^
+// Here we use html to add a custom class to the word "warning"
+```
+
+![](assets/6.png)
 
 ## Creating a toast notification
 

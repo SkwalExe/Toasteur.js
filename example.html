@@ -17,7 +17,7 @@
         document.ondblclick = () => new Toasteur().success("This is a success message, Click me!", 'Success!', () => {
             new Toasteur("top-left").error("This is an error message, Click me!", 'Error!', () => {
                 new Toasteur("bottom-left").info("This is an info message, Click me!", 'Info!', () => {
-                    new Toasteur("bottom-right").warn("This is a warning message, Click me!", 'Warning!')
+                    new Toasteur("bottom-right", 5000, "top", true).warn("This is a <span style='background-color:yellow;color:black;'>warning</span> message, Click me!", 'Warning!')
                 })
             })
         });
